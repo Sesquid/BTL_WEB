@@ -1,0 +1,19 @@
+DROP TABLE IF EXISTS user;
+CREATE TABLE user (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  username VARCHAR(100) NOT NULL UNIQUE,
+  password VARCHAR(1024) NOT NULL,
+  role INT DEFAULT 0,
+  create_time BIGINT
+);
+
+DROP TABLE IF EXISTS companies;
+CREATE TABLE companies (
+   companyID BIGINT PRIMARY KEY,
+   companyNAME NVARCHAR(1024),
+   taxCODE NVARCHAR(256),
+   phoneNUMBER NVARCHAR(64),
+   user_id BIGINT NOT NULL,
+   CONSTRAINT fk_companies FOREIGN KEY (user_id) REFERENCES user(id)
+);
+

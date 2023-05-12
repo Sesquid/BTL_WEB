@@ -1,0 +1,10 @@
+.table_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 0px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}

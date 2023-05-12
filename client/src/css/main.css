@@ -1,0 +1,14 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --darkgray: #58626c;
+  --darkwheat: #dac8be;
+  --morewheat: #ecc1a1;
+  --littlewhite: #f5f1ee;
+
+  font-size: 14px;
+  
+}
